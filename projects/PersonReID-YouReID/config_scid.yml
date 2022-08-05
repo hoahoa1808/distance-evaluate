@@ -1,0 +1,24 @@
+# VERSION=0.1.0
+
+# common fields
+data_name: "scid1"
+data_dir: "/datasets/reid/Test_SCID/test_scid"
+cache_dir: "/datasets/eval_cache/data"
+prefix: ""
+
+# cache
+create_cache: True
+min_imgs: 3  # số lượng tối thiểu của ảnh trong cls
+
+# pairs
+create_pairs: True
+total: 1.0e+6
+positive_ratio: 0.1
+buffer_size: 3.7e+5
+
+# feature_exaction
+extract_feature: True
+data_type: "face_folder"
+onnx_path: "/research/classification/re-identification/git/PersonReID-YouReID/weights/youtu_reid_baseline_lite.onnx"
+emb_dim: 768
+model_name: "YouReIDR50"

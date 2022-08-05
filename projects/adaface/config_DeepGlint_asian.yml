@@ -1,0 +1,24 @@
+# VERSION=0.1.0
+
+# common fields
+data_name: "DeepGlint_asian"
+data_dir: "/datasets/face/DeepGlint_asian"
+cache_dir: "/datasets/eval_cache/data"
+prefix: ""
+
+# cache
+create_cache: False
+min_imgs: 10  # số lượng tối thiểu của ảnh trong cls
+
+# pairs
+create_pairs: False
+total: 1.0e+8
+positive_ratio: 0.1
+buffer_size: 1.0e+7
+
+# feature_exaction
+extract_feature: True
+data_type: "face_folder"
+onnx_path: "/research/classification/face/AdaFace/pretrained/adaface_ir18_webface4m.onnx"
+emb_dim: 512
+model_name: "adaface_ir18"
